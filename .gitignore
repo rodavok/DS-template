@@ -1,0 +1,44 @@
+# Environment
+.env
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Data (often too large for git; use git-lfs or just keep local)
+data/*.csv
+data/*.xlsx
+data/*.parquet
+data/*.feather
+!data/.gitkeep
+
+# Outputs
+submissions/*.csv
+!submissions/.gitkeep
+models/*.pkl
+models/*.joblib
+models/*.cbm
+!models/.gitkeep
+logs/*.log
+!logs/.gitkeep
+
+# MLflow tracking
+mlflow.db
+mlruns/
+
+# Tuned hyperparameters (optional: commit these if you want them versioned)
+tuned_params.json
+
+# Generated artifacts
+feature_importance.csv
+oof_predictions.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# macOS
+.DS_Store
